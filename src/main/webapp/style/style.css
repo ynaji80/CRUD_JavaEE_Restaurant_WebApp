@@ -1,0 +1,13 @@
+.header {
+    margin: 0 auto 0 auto;
+    position: sticky;
+    z-index: 50;
+    display: grid;
+    background-color: white;
+    padding: 24px 10px 24px 10px ;
+}
+
+.slogan{
+    text-decoration: underline;
+    color: darkgreen;
+}
