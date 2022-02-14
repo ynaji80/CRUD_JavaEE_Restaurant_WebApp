@@ -1,6 +1,5 @@
 package com.restau.dao;
 
-import com.restau.extra.DatabaseConnection;
 import com.restau.models.Restaurant;
 
 import java.sql.Connection;
@@ -14,9 +13,12 @@ public class RestaurantDaoImp implements RestaurantDAO{
     private PreparedStatement ps;
     private String query;
     private ResultSet rs;
+    private DAOFactory daoFactory;
 
-    public RestaurantDaoImp() {
-        con= DatabaseConnection.getConnected();
+
+    public RestaurantDaoImp(DAOFactory daoFactory, Connection con) {
+        this.daoFactory= daoFactory;
+        this.con= con;
     }
 
     @Override

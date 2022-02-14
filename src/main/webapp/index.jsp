@@ -9,26 +9,28 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/css/all.min.css" >
+    <link rel="stylesheet" href="style/css/all.min.css">
     <meta charset="utf-8">
     <title>Restaurant App.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config={
-            mode:'jit',
+        tailwind.config = {
+            mode: 'jit',
             theme: {
                 extend: {
                     fontFamily: {
-                        'body':["Lato",'sans-serif'],
-                        'roboto':["Roboto",'sans-serif'],
-                        'poppings':["Poppings",'sans-serif'],
-                        'niramit':["Niramit",'sans-serif'],
-                        'black':["Black Han Sans",'sans-serif']
+                        'body': ["Lato", 'sans-serif'],
+                        'roboto': ["Roboto", 'sans-serif'],
+                        'poppings': ["Poppings", 'sans-serif'],
+                        'niramit': ["Niramit", 'sans-serif'],
+                        'black': ["Black Han Sans", 'sans-serif']
                     },
                     boxShadow: {
                         '5xl': '20px 20px 20px rgba(0,0,1,0.5)',
@@ -47,10 +49,11 @@
 </head>
 
 <body>
+<%--geeleo--%>
 
 <div class=" bg-gray-50  flex flex-col">
     <img src="https://blog.gotenzo.com/hubfs/igor-miske-JVSgcV8_vb4-unsplash-1.jpg"
-         class="relative top-0 max-w-none object-cover w-full h-[550px]" />
+         class="relative top-0 max-w-none object-cover w-full h-[550px]"/>
     <div class="mt-10 flex space-x-8 max-w-6xl mx-auto p-4">
         <h1 class="text-3xl font-bold font-heading text-gray-600">
             Add a new restaurant
@@ -68,7 +71,8 @@
                 />
                 <div class="w-7/12 bg-white p-5 rounded-r-lg">
                     <h3 class="pt-4 text-2xl text-center">Add a new restaurant!</h3>
-                    <form action="AddRestaurant" method="post" enctype="multipart/form-data" class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+                    <form action="AddRestaurant" method="post" enctype="multipart/form-data"
+                          class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
                         <div class="mb-4">
                             <label class="block mb-2 text-sm font-bold text-gray-700" for="name">
                                 Restaurant Name
@@ -129,7 +133,7 @@
                                 Restaurant Image
                             </label>
                             <span class="sr-only">Choose profile photo</span>
-                            <input type="file" name="image"  class="block w-full text-sm text-gray-500
+                            <input type="file" name="image" class="block w-full text-sm text-gray-500
                   file:mr-4 file:py-2 file:px-4
                   file:rounded-full file:border-0
                   file:text-sm file:font-semibold
@@ -147,8 +151,11 @@
                     </form>
                 </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" id="modal-close" class=" cursor-pointer relative right-9 h-9 text-red-400" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                <svg xmlns="http://www.w3.org/2000/svg" id="modal-close"
+                     class=" cursor-pointer relative right-9 h-9 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clip-rule="evenodd"/>
                 </svg>
             </div>
         </div>
@@ -158,79 +165,138 @@
             <h2 class="text-xl font-bold text-sky-600">
                 We have the best restaurants in the city
             </h2>
+            <!-- wa  ge-->
             <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900">
                 Check our restaurants in Rabat
             </h1>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <%
-                RestaurantDaoImp restaurantDao = new RestaurantDaoImp();
-                List <Restaurant> restaurantList = restaurantDao.getAllRestaurants();
-                if (restaurantList!=null){
-                    for(int i=0;i<restaurantList.size();i++){
+                List<Restaurant> restaurantList = (List<Restaurant>) session.getAttribute("restaurantList");
+                if (restaurantList != null) {
+                    for (int i = 0; i < restaurantList.size(); i++) {
+                        String filename=Paths.get(restaurantList.get(i).getImage()).getFileName().toString();
+
             %>
             <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
                 <div class="w-full md:w-2/5 h-80">
-                    <img class="object-center object-cover w-full h-full"
-                        src=<%="img/"+Paths.get(restaurantList.get(i).getImage()).getFileName().toString()%> />
+                    <img class="object-cover w-full h-full"
+                         src=<%="img/" + filename%>
+                    />
 
                 </div>
                 <div class="w-full md:w-3/5 text-left p-6 md:p-4">
-                    <p class="mt-2 text-xl text-gray-700 font-bold"><%=restaurantList.get(i).getName()%></p>
-                    <p class="mt-2 text-base text-gray-400 font-normal"><%=restaurantList.get(i).getAddress()%></p>
-                    <p class="mt-2 text-base leading-relaxed text-gray-500 font-normal"><%=restaurantList.get(i).getDescription()%></p>
+                    <p class="mt-2 text-xl text-gray-700 font-bold"><%=restaurantList.get(i).getName()%>
+                    </p>
+                    <p class="mt-2 text-base text-gray-400 font-normal"><%=restaurantList.get(i).getAddress()%>
+                    </p>
+                    <p class="mt-2 text-base leading-relaxed text-gray-500 font-normal"><%=restaurantList.get(i).getDescription()%>
+                    </p>
                     <div class="mt-2 flex justify-start space-x-2">
-                        <a href=<%=restaurantList.get(i).getFacebookUrl()%> target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-600">
+                        <a href=<%=restaurantList.get(i).getFacebookUrl()%> target="_blank" rel="noopener noreferrer"
+                           class="text-gray-500 hover:text-gray-600">
                             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                      clip-rule="evenodd"></path>
                             </svg>
                         </a>
-                        <a href=<%=restaurantList.get(i).getLocationUrl()%> target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                        <a href=<%=restaurantList.get(i).getLocationUrl()%> target="_blank" rel="noopener noreferrer"
+                           class="text-gray-500 hover:text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20"
+                                 fill="currentColor">
+                                <path fill-rule="evenodd"
+                                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                      clip-rule="evenodd"/>
                             </svg>
                         </a>
                     </div>
                     <div class="flex mt-10">
-                        <button onclick="openModal(<%=String.valueOf(restaurantList.get(i).getId())%>)" type="button" class="py-2 px-6 shadow-md rounded-full bg-orange-400 text-white font-sans font-semibold text-md  active:shadow-none mr-2">Edit</button>
-                        <div id=<%=String.valueOf(restaurantList.get(i).getId())%> aria-hidden="true" class="hidden flex overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                        <button onclick="openModal(<%=String.valueOf(restaurantList.get(i).getId())%>)" type="button"
+                                class="py-2 px-6 shadow-md rounded-full bg-orange-400 text-white font-sans font-semibold text-md  active:shadow-none mr-2">
+                            Edit
+                        </button>
+                        <div id=<%=String.valueOf(restaurantList.get(i).getId())%> aria-hidden="true"
+                             class="hidden flex overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
                             <div class="relative px-4 w-full max-w-lg h-full md:h-auto">
                                 <!-- Modal content -->
                                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                                     <div class="flex justify-end p-2">
-                                        <button type="button" onclick="closeModal(<%=String.valueOf(restaurantList.get(i).getId())%>)" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="update-modal">
-                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                        <button type="button"
+                                                onclick="closeModal(<%=String.valueOf(restaurantList.get(i).getId())%>)"
+                                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                                                data-modal-toggle="update-modal">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
                                         </button>
                                     </div>
-                                    <form method="post" class="px-6 pb-4 space-y-6 lg:px-8 sm:pb-6 xl:pb-8" action="UpdateRestaurant" enctype="multipart/form-data">
-                                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Edit your restaurant info!</h3>
-                                        <input type="hidden" name="id" value="<%=String.valueOf(restaurantList.get(i).getId())%>">
+                                    <form method="post" class="px-6 pb-4 space-y-6 lg:px-8 sm:pb-6 xl:pb-8"
+                                          action="UpdateRestaurant" enctype="multipart/form-data">
+                                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">Edit your
+                                            restaurant info!</h3>
+                                        <input type="hidden" name="id"
+                                               value="<%=String.valueOf(restaurantList.get(i).getId())%>">
                                         <div>
-                                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Restaurant name</label>
-                                            <input type="text" name="name" id="name" value="<%=restaurantList.get(i).getName()%>" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Restaurant name" required>
+                                            <label for="name"
+                                                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Restaurant
+                                                name</label>
+                                            <input type="text" name="name" id="name"
+                                                   value="<%=restaurantList.get(i).getName()%>"
+                                                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                                   placeholder="Restaurant name" required>
                                         </div>
                                         <div>
-                                            <label for="address" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Restaurant address</label>
-                                            <input type="text" name="address" id="address" value="<%=restaurantList.get(i).getAddress()%>" placeholder="Restaurant address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                                            <label for="address"
+                                                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Restaurant
+                                                address</label>
+                                            <input type="text" name="address" id="address"
+                                                   value="<%=restaurantList.get(i).getAddress()%>"
+                                                   placeholder="Restaurant address"
+                                                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                                   required>
                                         </div>
                                         <div>
-                                            <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Restaurant description</label>
-                                            <input type="text" name="description" id="description" value="<%=restaurantList.get(i).getDescription()%>" placeholder="Restaurant address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                                            <label for="description"
+                                                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Restaurant
+                                                description</label>
+                                            <input type="text" name="description" id="description"
+                                                   value="<%=restaurantList.get(i).getDescription()%>"
+                                                   placeholder="Restaurant address"
+                                                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                                   required>
                                         </div>
                                         <div>
-                                            <label for="facebook" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Facebook Url</label>
-                                            <input type="text" name="facebook" id="facebook" value="<%=restaurantList.get(i).getFacebookUrl()%>" placeholder="Facebook Url" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                                            <label for="facebook"
+                                                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Facebook
+                                                Url</label>
+                                            <input type="text" name="facebook" id="facebook"
+                                                   value="<%=restaurantList.get(i).getFacebookUrl()%>"
+                                                   placeholder="Facebook Url"
+                                                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                                   required>
                                         </div>
                                         <div>
-                                            <label for="location" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Location Url</label>
-                                            <input type="text" name="location" id="location" value="<%=restaurantList.get(i).getLocationUrl()%>" placeholder="Location Url" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                                            <label for="location"
+                                                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Location
+                                                Url</label>
+                                            <input type="text" name="location" id="location"
+                                                   value="<%=restaurantList.get(i).getLocationUrl()%>"
+                                                   placeholder="Location Url"
+                                                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                                   required>
                                         </div>
                                         <div>
-                                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="image">
+                                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                                                   for="image">
                                                 Restaurant Image
                                             </label>
                                             <span class="sr-only">Choose profile photo</span>
-                                            <input type="file" name="image" value="<%=restaurantList.get(i).getImage()%>"  class="block w-full text-sm text-gray-500
+                                            <input type="file" name="image"
+                                                   value="<%=restaurantList.get(i).getImage()%>" required class="block w-full text-sm text-gray-500
                                               file:mr-4 file:py-2 file:px-4
                                               file:rounded-full file:border-0
                                               file:text-sm file:font-semibold
@@ -238,14 +304,19 @@
                                               hover:file:bg-sky-100
                                             "/>
                                         </div>
-                                        <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save your modifications</button>
+                                        <button type="submit"
+                                                class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            Save your modifications
+                                        </button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                         <form action="DeleteRestaurant" method="post">
                             <input type="hidden" name="id" value="<%= restaurantList.get(i).getId() %>">
-                            <button class="py-2 px-6 shadow-md rounded-full bg-red-500 text-white font-sans font-semibold text-md  active:shadow-none">Delete</button>
+                            <button class="py-2 px-6 shadow-md rounded-full bg-red-500 text-white font-sans font-semibold text-md  active:shadow-none">
+                                Delete
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -257,7 +328,7 @@
         </div>
     </section>
 </div>
-<script type="text/javascript" src="script/script.js" >
+<script type="text/javascript" src="script/script.js">
 </script>
 </body>
 
